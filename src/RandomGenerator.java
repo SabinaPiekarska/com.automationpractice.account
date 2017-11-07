@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -58,6 +59,12 @@ public class RandomGenerator extends BrowserFunctions {
         List <WebElement> elements = select.getOptions();
         randomClick(elements);
     }
+
+    public void countrySelect (WebElement element, int index) {
+    Select select = new Select(element);
+    select.selectByIndex(index);
+    }
+
 
 //     Method that copies string to clipboard
 

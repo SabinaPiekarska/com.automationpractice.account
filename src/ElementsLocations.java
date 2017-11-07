@@ -25,7 +25,7 @@ public class ElementsLocations extends BrowserFunctions {
         return driver.findElement(By.id("SubmitCreate"));
     }
 
-//    Methods with web elements locations from create an account page
+//    Methods with web elements locations from create an account page and My Account page
 
     public List<WebElement> getGender () {
         return driver.findElements(By.name("id_gender"));
@@ -76,10 +76,6 @@ public class ElementsLocations extends BrowserFunctions {
     public WebElement getCountry(){
         return driver.findElement(By.id("id_country"));
     }
-    public WebElement getUSA(){
-        return driver.findElement(By.tagName("United States"));
-    }
-
     public WebElement getInfoTextarea(){
         return driver.findElement(By.id("other"));
     }
@@ -95,4 +91,28 @@ public class ElementsLocations extends BrowserFunctions {
     public WebElement getRegisterButton(){
         return driver.findElement(By.id("submitAccount"));
     }
+
+//    Methods with web elements locations from My Account page
+    public WebElement getMyPersonalInfo () {
+        return driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/div[1]/ul/li[4]/a/span"));
+    }
+//    public WebElement getMyAdress () {
+//        return driver.findElement(By.xpath());
+//    }
+
+//    Methods with web element locations from My Account page
+    public WebElement getNewName () {    return driver.findElement(By.id("firstname")); }
+    public WebElement getNewLastname () {    return driver.findElement(By.id("lastname")); }
+
+    public WebElement getOldPassword () {
+        return driver.findElement(By.id("old_passwd"));
+    }
+    public WebElement getConfirmPassword () {
+        return driver.findElement(By.id("confirmation"));
+    }
+public WebElement getSaveChangesButton () {
+        return driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/form/fieldset/div[11]/button"));
+    }
+
+
 }

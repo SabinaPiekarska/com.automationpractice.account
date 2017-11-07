@@ -14,7 +14,7 @@ public class BrowserFunctions {
 
     // Method that waits till specified element will be visible and enable to click.
     public void waitUntilPageLoads(By load) throws InterruptedException{
-        WebDriverWait wait = new WebDriverWait(driver, 15);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.elementToBeClickable(load));
     }
 
