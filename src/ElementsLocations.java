@@ -24,8 +24,13 @@ public class ElementsLocations extends BrowserFunctions {
     public WebElement getSubmitButton(){
         return driver.findElement(By.id("SubmitCreate"));
     }
-
-//    Methods with web elements locations from create an account page and My Account page
+    public WebElement getRegisteredEMail() {
+        return driver.findElement(By.id("email"));
+    }
+    public WebElement getSubmitLoginButton() {
+        return driver.findElement(By.id("SubmitLogin"));
+    }
+//    Methods with web elements locations from create an account page and My EditProfile page
 
     public List<WebElement> getGender () {
         return driver.findElements(By.name("id_gender"));
@@ -48,10 +53,7 @@ public class ElementsLocations extends BrowserFunctions {
     public WebElement getBirthYearList(){
         return driver.findElement(By.id("years"));
     }
-    public List<WebElement> getNewsletterCheckbox(){
-//        return driver.findElement(By.id("newsletter"));
-        return driver.findElements(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/form/div[1]/div[7]"));
-    }
+    public WebElement getNewsletterCheckbox() { return driver.findElement(By.id("newsletter")); }
     public WebElement getOfferCheckbox(){
         return driver.findElement(By.id("optin"));
     }
@@ -92,15 +94,15 @@ public class ElementsLocations extends BrowserFunctions {
         return driver.findElement(By.id("submitAccount"));
     }
 
-//    Methods with web elements locations from My Account page
+//    Methods with web elements locations from My EditProfile page
     public WebElement getMyPersonalInfo () {
         return driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/div[1]/ul/li[4]/a/span"));
     }
-//    public WebElement getMyAdress () {
-//        return driver.findElement(By.xpath());
-//    }
+    public WebElement getMyAdress () {
+        return driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/div[1]/ul/li[3]/a/span"));
+    }
 
-//    Methods with web element locations from My Account page
+//    Methods with web element locations from My Personal Information page
     public WebElement getNewName () {    return driver.findElement(By.id("firstname")); }
     public WebElement getNewLastname () {    return driver.findElement(By.id("lastname")); }
 
@@ -110,9 +112,20 @@ public class ElementsLocations extends BrowserFunctions {
     public WebElement getConfirmPassword () {
         return driver.findElement(By.id("confirmation"));
     }
-public WebElement getSaveChangesButton () {
+    public WebElement getSaveChangesButton () {
         return driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/form/fieldset/div[11]/button"));
+    }
+    public WebElement getSignOutLink () {
+        return driver.findElement(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/a"));
     }
 
 
+//    Methods with web element locations from My Addresses page
+
+    public WebElement getUpdateButton () {
+        return driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div[1]/div/div/ul/li[9]/a[1]/span"));
+    }
+    public WebElement getSaveUpdateButton () {
+        return driver.findElement(By.id("submitAddress"));
+    }
 }

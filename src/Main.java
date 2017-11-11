@@ -13,13 +13,18 @@ public class Main {
         BrowserFunctions functions = new BrowserFunctions();
         ElementsLocations element = new ElementsLocations();
         Registration register = new Registration();
-        Account account = new Account();
+        EditProfile account = new EditProfile();
+        Login login = new Login();
 //
+        register.createEMail();
+        register.signIn();
         register.createAnAccount();
-        register.generatePassword();
         register.fillPersonalInformation();
+        register.fillBirthday();
+        register.fillAdditionalOptions();
         register.fillAddressInfo();
-        account.editPersonalInfo();
+        register.registrationClick();
 
+//        login.logging();
     }
 }

@@ -60,31 +60,27 @@ public class RandomGenerator extends BrowserFunctions {
         randomClick(elements);
     }
 
-    public void countrySelect (WebElement element, int index) {
+//    Method that randomly select one of dropdown options by index
+
+    public void randomSelectByIndex (WebElement element, int index) {
     Select select = new Select(element);
-    select.selectByIndex(index);
+        if (index>0){
+        select.selectByIndex(index);
+        }
+        else {
+        return;
+        }
     }
 
+//    Method that randomly generates boolean value
 
-//     Method that copies string to clipboard
+    public void generateRandomBoolean(WebElement element) {
+        Random random = new Random();
+        boolean value = random.nextBoolean();
+        if (value==true) {
+            element.click();
+        }
 
-    public void setClipboardData(String imagePath) {
-        StringSelection stringSelection = new StringSelection(imagePath);
-        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
-    }
-
-//     Method that pastes string from clipboard
-
-    public void uploadRandomPicture () throws AWTException {
-        setClipboardData("D:\\DemoqaAutomaticTest\\palczak.jpg");
-        //native key strokes for CTRL, V and ENTER keys
-        Robot robot = new Robot();
-        robot.keyPress(KeyEvent.VK_CONTROL);
-        robot.keyPress(KeyEvent.VK_V);
-        robot.keyRelease(KeyEvent.VK_V);
-        robot.keyRelease(KeyEvent.VK_CONTROL);
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
     }
 
 }
