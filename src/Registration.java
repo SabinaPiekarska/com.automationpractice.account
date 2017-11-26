@@ -64,7 +64,6 @@ public class Registration {
         editFields(element.getAdress2(), generator.generateRandomWord(25));
         editFields(element.getCity(), generator.generateRandomWord(15));
         generator.randomDropdownClick(element.getCountry());
-//        generator.randomDropdownCountry(element.getCountry(),1);
         generator.randomDropdownClick(element.getStateList());
         editFields(element.getPostcode(), generator.generateRandomInt(5));
         editFields(element.getInfoTextarea(), generator.generateRandomWord(50));
@@ -77,5 +76,4 @@ public class Registration {
     public void registrationClick () {
         element.getRegisterButton().click();
     }
-
 }
