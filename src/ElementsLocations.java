@@ -6,18 +6,16 @@ import java.util.List;
 public class ElementsLocations extends BrowserFunctions {
 
 //    Method with web element location from temporary email page
-
     public WebElement getTemporaryEMail() {
         return driver.findElement(By.id("mail"));
     }
-//    Method with web element location from main page
 
+//    Method with web element location from main page
     public WebElement getSignInLink(){
         return driver.findElement(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a"));
     }
 
 //    Methods with web elements locations from authentication page
-
     public WebElement getEMail(){
         return driver.findElement(By.id("email_create"));
     }
@@ -30,8 +28,8 @@ public class ElementsLocations extends BrowserFunctions {
     public WebElement getSubmitLoginButton() {
         return driver.findElement(By.id("SubmitLogin"));
     }
-//    Methods with web elements locations from create an account page and My EditProfile page
 
+//    Methods with web elements locations from create an account page and My EditProfile page
     public List<WebElement> getGender () {
         return driver.findElements(By.name("id_gender"));
     }
@@ -118,10 +116,11 @@ public class ElementsLocations extends BrowserFunctions {
     public WebElement getSignOutLink () {
         return driver.findElement(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/a"));
     }
-
+    public WebElement getReturnToAccountButton () {
+        return driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/ul/li[1]/a/span"));
+    }
 
 //    Methods with web element locations from My Addresses page
-
     public WebElement getUpdateButton () {
         return driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div[1]/div/div/ul/li[9]/a[1]/span"));
     }

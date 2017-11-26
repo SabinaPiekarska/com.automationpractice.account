@@ -24,56 +24,52 @@ public class RandomGenerator extends BrowserFunctions {
     }
 
 //    Method that passes specified letters to generateRandomString method
-
     public String generateRandomWord(int x) {
         String letters = "abcdefghijklmnopqrstuvwxyz";
         return generateRandomString(letters, x);
     }
 
 //    Method that passes specified numbers to generateRandomString method
-
     public String generateRandomInt(int x){
         String numbers = "1234567890";
         return generateRandomString(numbers, x);
     }
 
-    /*Method that passes specified letters, numbers and special characters to generateRandomString method */
-
+//Method that passes specified letters, numbers and special characters to generateRandomString method
     public String generateRandomPassword (int x) {
         String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*1234567890";
         return generateRandomString(chars, x);
     }
 
-    /* Method that generate random click on web element from possible options */
-
+//Method that generate random click on web element from possible options
     public void randomClick(List<WebElement> options) {
         Random random = new Random();
-        int index = random.nextInt(options.size());
-        options.get(index).click();
+        while (true) {
+            int index = random.nextInt(options.size());
+            if (!(index == 0)) {
+                options.get(index).click();
+                break;
+            } else {
+                continue;
+            }
+        }
     }
 
-    /* Method that counts the size of web element and passes it to randomClick method */
-
+// Method that counts the size of web element and passes it to randomClick method
     public void randomDropdownClick(WebElement element) {
         Select select = new Select(element);
         List <WebElement> elements = select.getOptions();
         randomClick(elements);
     }
 
-//    Method that randomly select one of dropdown options by index
+//delete later
+//    public void randomDropdownCountry(WebElement element, int index) {
+//            Select select = new Select(element);
+//            select.selectByIndex(index);
+//        }
 
-    public void randomSelectByIndex (WebElement element, int index) {
-    Select select = new Select(element);
-        if (index>0){
-        select.selectByIndex(index);
-        }
-        else {
-        return;
-        }
-    }
 
 //    Method that randomly generates boolean value
-
     public void generateRandomBoolean(WebElement element) {
         Random random = new Random();
         boolean value = random.nextBoolean();
