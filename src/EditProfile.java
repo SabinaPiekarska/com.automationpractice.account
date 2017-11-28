@@ -28,8 +28,8 @@ public class EditProfile extends Registration {
         functions.waitUntilPageLoads(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/div[1]/ul/li[3]/a/span"));
         element.getMyAdress().click();
         functions.waitUntilPageLoads(By.xpath("/html/body/div/div[2]/div/div[3]/div/div[1]/div/div/ul/li[9]/a[1]/span"));
-        element.getUpdateButton();
+        element.getUpdateButton().click();
         fillAddressInfo();
-        element.getSaveUpdateButton();
+        element.getSaveUpdateButton().click();
     }
 }

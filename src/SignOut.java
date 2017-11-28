@@ -8,6 +8,6 @@ public class SignOut{
 //    Method that logs out
     public void loggingOut () throws InterruptedException {
         functions.waitUntilPageLoads(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/a"));
-        element.getSignOutLink();
+        element.getSignOutButton().click();
     }
 }

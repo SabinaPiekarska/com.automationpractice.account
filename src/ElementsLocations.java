@@ -113,7 +113,7 @@ public class ElementsLocations extends BrowserFunctions {
     public WebElement getSaveChangesButton () {
         return driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/form/fieldset/div[11]/button"));
     }
-    public WebElement getSignOutLink () {
+    public WebElement getSignOutButton() {
         return driver.findElement(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/a"));
     }
     public WebElement getReturnToAccountButton () {

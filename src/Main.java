@@ -14,7 +14,6 @@ public class Main {
         SignOut signOut = new SignOut();
         String password = generator.generateRandomPassword(15);
 
-
         register.createEMail();
         register.signIn();
         register.createAnAccount();

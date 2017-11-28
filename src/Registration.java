@@ -63,7 +63,7 @@ public class Registration {
         editFields(element.getAdress(), generator.generateRandomWord(25));
         editFields(element.getAdress2(), generator.generateRandomWord(25));
         editFields(element.getCity(), generator.generateRandomWord(15));
-        generator.randomDropdownClick(element.getCountry());
+        generator.clicksDropdownText(element.getCountry(), "United States");
         generator.randomDropdownClick(element.getStateList());
         editFields(element.getPostcode(), generator.generateRandomInt(5));
         editFields(element.getInfoTextarea(), generator.generateRandomWord(50));
@@ -72,7 +72,7 @@ public class Registration {
         editFields(element.getAlias(), generator.generateRandomWord(15));
     }
 
-//    Method thath clicks on register button
+//    Method that clicks on register button
     public void registrationClick () {
         element.getRegisterButton().click();
     }
