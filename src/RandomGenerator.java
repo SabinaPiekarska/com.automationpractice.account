@@ -35,16 +35,17 @@ public class RandomGenerator extends BrowserFunctions {
         String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*1234567890";
         return generateRandomString(chars, x);
     }
-//    index != 0 &&
+
     //Method that generate random click on web element from possible options
     public void randomClick(List<WebElement> options) {
         Random random = new Random();
         while (true) {
             int index = random.nextInt(options.size());
-            if (Integer.toString(index)!=null) {
+            if (index != 0) {
                 options.get(index).click();
                 break;
-            } else {
+            }
+            else {
                 continue;
             }
         }
@@ -70,7 +71,5 @@ public class RandomGenerator extends BrowserFunctions {
         if (value==true) {
             element.click();
         }
-
     }
-
 }

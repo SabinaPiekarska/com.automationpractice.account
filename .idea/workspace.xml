@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a93b62e5-72e0-4730-91e3-0f904acaeb01" name="Default" comment="Ver 1.3">
+    <list default="true" id="a93b62e5-72e0-4730-91e3-0f904acaeb01" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../com.automationpractice.account/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../com.automationpractice.account/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../com.automationpractice.account/src/BrowserFunctions.java" afterPath="$PROJECT_DIR$/../com.automationpractice.account/src/BrowserFunctions.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../com.automationpractice.account/src/EditProfile.java" afterPath="$PROJECT_DIR$/../com.automationpractice.account/src/EditProfile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../com.automationpractice.account/src/ElementsLocations.java" afterPath="$PROJECT_DIR$/../com.automationpractice.account/src/ElementsLocations.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../com.automationpractice.account/src/Main.java" afterPath="$PROJECT_DIR$/../com.automationpractice.account/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../com.automationpractice.account/src/RandomGenerator.java" afterPath="$PROJECT_DIR$/../com.automationpractice.account/src/RandomGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../com.automationpractice.account/src/Registration.java" afterPath="$PROJECT_DIR$/../com.automationpractice.account/src/Registration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../com.automationpractice.account/src/SignOut.java" afterPath="$PROJECT_DIR$/../com.automationpractice.account/src/SignOut.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../com.automationpractice.account/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +35,8 @@
       <file leaf-file-name="RandomGenerator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../com.automationpractice.account/src/RandomGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="12" column="64" lean-forward="true" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+            <state relative-caret-position="140">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="51" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,7 +47,7 @@
       <file leaf-file-name="Registration.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../com.automationpractice.account/src/Registration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
+            <state relative-caret-position="-375">
               <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -64,11 +59,9 @@
       <file leaf-file-name="EditProfile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../com.automationpractice.account/src/EditProfile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1081">
-              <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1400">
+              <caret line="33" column="1" lean-forward="false" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -136,11 +129,11 @@
         <option value="$PROJECT_DIR$/../com.automationpractice.account/src/Account.java" />
         <option value="$PROJECT_DIR$/../com.automationpractice.account/src/Login.java" />
         <option value="$PROJECT_DIR$/../com.automationpractice.account/src/BrowserFunctions.java" />
-        <option value="$PROJECT_DIR$/../com.automationpractice.account/src/EditProfile.java" />
         <option value="$PROJECT_DIR$/../com.automationpractice.account/src/Main.java" />
         <option value="$PROJECT_DIR$/../com.automationpractice.account/src/SignOut.java" />
         <option value="$PROJECT_DIR$/../com.automationpractice.account/src/ElementsLocations.java" />
         <option value="$PROJECT_DIR$/../com.automationpractice.account/src/Registration.java" />
+        <option value="$PROJECT_DIR$/../com.automationpractice.account/src/EditProfile.java" />
         <option value="$PROJECT_DIR$/../com.automationpractice.account/src/RandomGenerator.java" />
       </list>
     </option>
@@ -367,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511715644286</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ver 1.4">
+      <created>1511880747753</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1511880747753</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -446,7 +446,8 @@
     <MESSAGE value="Ver 1.1" />
     <MESSAGE value="Ver 1.2" />
     <MESSAGE value="Ver 1.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ver 1.3" />
+    <MESSAGE value="Ver 1.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver 1.4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -511,9 +512,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
           <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -571,9 +570,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
           <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -641,9 +638,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="2" column="42" lean-forward="false" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -731,9 +726,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -898,10 +891,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../com.automationpractice.account/src/EditProfile.java">
+    <entry file="file://$PROJECT_DIR$/../com.automationpractice.account/src/Registration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+        <state relative-caret-position="-375">
+          <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -922,20 +915,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../com.automationpractice.account/src/Registration.java">
+    <entry file="file://$PROJECT_DIR$/../com.automationpractice.account/src/EditProfile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1400">
+          <caret line="33" column="1" lean-forward="false" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../com.automationpractice.account/src/RandomGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="12" column="64" lean-forward="true" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+        <state relative-caret-position="140">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="51" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
