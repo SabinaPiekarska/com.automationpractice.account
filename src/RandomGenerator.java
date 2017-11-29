@@ -36,7 +36,7 @@ public class RandomGenerator extends BrowserFunctions {
         return generateRandomString(chars, x);
     }
 
-    //Method that generate random click on web element from possible options
+//  Method that generate random click on web element from possible options
     public void randomClick(List<WebElement> options) {
         Random random = new Random();
         while (true) {
@@ -49,6 +49,13 @@ public class RandomGenerator extends BrowserFunctions {
                 continue;
             }
         }
+    }
+
+//    Method that generate random click on radio button options
+    public void randomRadioClick (List<WebElement> options) {
+        Random random = new Random();
+        int index = random.nextInt(options.size());
+        options.get(index).click();
     }
 
 // Method that counts the size of web element and passes it to randomClick method

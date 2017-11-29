@@ -22,12 +22,6 @@ public class ElementsLocations extends BrowserFunctions {
     public WebElement getSubmitButton(){
         return driver.findElement(By.id("SubmitCreate"));
     }
-    public WebElement getRegisteredEMail() {
-        return driver.findElement(By.id("email"));
-    }
-    public WebElement getSubmitLoginButton() {
-        return driver.findElement(By.id("SubmitLogin"));
-    }
 
 //    Methods with web elements locations from create an account page and My EditProfile page
     public List<WebElement> getGender () {
@@ -58,10 +52,10 @@ public class ElementsLocations extends BrowserFunctions {
     public WebElement getCompany(){
         return driver.findElement(By.id("company"));
     }
-    public WebElement getAdress(){
+    public WebElement getAddress(){
         return driver.findElement(By.id("address1"));
     }
-    public WebElement getAdress2(){
+    public WebElement getAddress2(){
         return driver.findElement(By.id("address2"));
     }
     public WebElement getCity(){
@@ -96,7 +90,7 @@ public class ElementsLocations extends BrowserFunctions {
     public WebElement getMyPersonalInfo () {
         return driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/div[1]/ul/li[4]/a/span"));
     }
-    public WebElement getMyAdress () {
+    public WebElement getMyAddress() {
         return driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/div[1]/ul/li[3]/a/span"));
     }
 

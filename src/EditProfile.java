@@ -25,7 +25,7 @@ public class EditProfile extends Registration {
 //    Method that clicks My Address link on My EditProfile Page and edit all the available values
     public void editAddress () throws InterruptedException {
         functions.waitUntilPageLoads(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/div[1]/ul/li[3]/a/span"));
-        element.getMyAdress().click();
+        element.getMyAddress().click();
         functions.waitUntilPageLoads(By.xpath("/html/body/div/div[2]/div/div[3]/div/div[1]/div/div/ul/li[9]/a[1]/span"));
         element.getUpdateButton().click();
         fillAddressInfo();

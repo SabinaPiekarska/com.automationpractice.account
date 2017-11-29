@@ -38,7 +38,7 @@ public class Registration {
 //    Method that fills in personal information form fields with proper values
     public void fillPersonalInformation (String password) throws InterruptedException {
         functions.waitUntilPageLoads(By.name("id_gender"));
-        generator.randomClick(element.getGender());
+        generator.randomRadioClick(element.getGender());
         element.getName().sendKeys(generator.generateRandomWord(25));
         element.getLastName().sendKeys(generator.generateRandomWord(25));
         element.getPassword().sendKeys(password);
@@ -60,8 +60,8 @@ public class Registration {
 //  Method that clears and than fills in address related fields
     public void fillAddressInfo () throws InterruptedException {
         editFields(element.getCompany(), generator.generateRandomWord(25));
-        editFields(element.getAdress(), generator.generateRandomWord(25));
-        editFields(element.getAdress2(), generator.generateRandomWord(25));
+        editFields(element.getAddress(), generator.generateRandomWord(25));
+        editFields(element.getAddress2(), generator.generateRandomWord(25));
         editFields(element.getCity(), generator.generateRandomWord(15));
         generator.clicksDropdownText(element.getCountry(), "United States");
         generator.randomDropdownClick(element.getStateList());
